@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" type="text/css" href="css\mafia.css">
+	<link rel="stylesheet" type="text/css" href="css\checkbox.css">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<title>Circle Setup</title>
+</head>
+<body>
+<div class="container">
+<header>
+	<h2>Circle Setup</h2>
+</header>
+<section class="content">
+<div class="user_list_wrapper">
+<form id="settings_form" action="waiting_host.html" method="post">
+<table>
+	<tr>
+		<td>Round Time:</td>
+		<td><input type="time" name="time" value="02:00:00"></td>
+	</tr>
+	<tr>
+		<td>Mod Only:</td>
+		<td>
+		<div class="squaredTwo">
+			<input type="checkbox" value="None" id="squaredTwo" name="modOnly" />
+			<label for="squaredTwo"></label>
+		</div>
+		</td>
+	</tr>
+</table>
+</form>
+</div>
+</section>
+<footer>
+<input type="submit" value="OK" form="settings_form">
+</footer>
+</div>
+</body>
+</html>

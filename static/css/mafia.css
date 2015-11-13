@@ -1,0 +1,243 @@
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+html, body { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden;
+}
+
+html {
+	text-size-adjust: none;
+	webkit-text-size-adjust: none;
+}
+
+body
+{
+	background: #333333;
+	text-align: center;
+	color: white;
+	font-family: verdana;
+	overflow: none;
+	padding: 0% 5% 0% 5%;
+}
+
+h1
+{
+	font-size: 5em;
+}
+
+h2
+{
+	font-size: 10vmin;
+	margin:0;
+	padding-top: 5%;
+}
+
+h3
+{
+	font-size: 5vmin;
+	padding: 0;
+	margin: .5em 0 0 0;
+}
+
+input
+{
+	font-size: 1em;
+}
+
+table
+{
+	text-align: left;
+}
+
+td {
+	white-space:nowrap;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  margin: 0 0 .6em 1em;
+}
+
+input[type=time] {
+	width:8em;
+}
+
+button, input[type=submit] {
+	-moz-box-shadow:inset 0px .01em 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px .01em 0px 0px #ffffff;
+	box-shadow:inset 0px .01em 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	-moz-border-radius:.1em;
+	-webkit-border-radius:.1em;
+	border-radius:.1em;
+	border:.05em solid #dcdcdc;
+	display:inline-block;
+	color:#666666;
+	font-family:Arial;
+	font-size:2em;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	width:80%;
+	margin:0.05em;
+}
+
+input[type=submit]
+{
+	font-size: 5vmin;
+	margin-top: .6em;
+	margin-bottom: 5%;
+	width: 100%;
+}
+
+.submitBottom
+{
+	bottom: 1em;
+	position: absolute;
+	left:0;
+	margin-left: 10%;
+}
+
+button:hover, input[type=submit]:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
+button:active, input[type=submit]:active {
+	position:relative;
+	top:1px;
+}
+
+.role_wrapper {
+	float:left;
+}
+
+.time_wrapper {
+	float:right;
+}
+
+.user_list_wrapper
+{
+	float: left;
+	overflow: scroll;
+	border: 3px solid #ffffff;
+	border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	height:95%;
+	width:100%;
+	display: table-cell; 
+	font-size: 6vmin;
+	font-family:Consolas;
+	text-align: center;
+	line-height: 2em;
+	padding: .5em 0 .5em 0;
+	margin-top: 5%;
+	
+}
+
+.user_list_wrapper span {
+	margin-left: .75em;
+	margin-right: .75em;
+}
+
+span {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (orientation:landscape) {
+.role_wrapper {
+	position: absolute;
+	top: 0;
+}
+.time_wrapper {
+	position: absolute;
+	top: 0;
+	right: 5%;
+}
+h2 {
+	margin-bottom: .25em;
+}
+
+.user_list_wrapper {
+	height: 98%;
+	margin-top: 0%;
+}
+
+}
+
+.center {
+	width: 90%;
+    margin-left:5%;
+}
+
+.dead {
+	text-decoration: line-through;
+	color:#666666;
+}
+
+.mafia {
+	color:#ff6666;
+}
+
+.you {
+	color:#66ff66;
+}
+
+.kill {
+	border: 3px solid #ff6666;
+}
+
+.normal {
+	border: 3px solid #333333;
+}
+
+.killall {
+	border: 3px solid #ff0000;
+}
+
+.container { 
+	display: table;
+	height: 100%;
+	width:100%;
+}
+.content { 
+	display: table-row; height: 100%;
+}
+
+.options button {
+	margin-bottom:10%;
+}
+
+.name_taken {
+	padding:0;
+	color:#ff6666;
+	font-size: 5vmin;
+	line-height: 1em;
+}

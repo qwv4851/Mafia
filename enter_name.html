@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" type="text/css" href="css\mafia.css">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/mafia.js"></script>
+	<title>Enter Your Name</title>
+</head>
+<body>
+<div class="container">
+<header>
+	<h2>Enter Your Name</h2>
+</header>
+<section class="content">
+<div class="user_list_wrapper">
+<form id="name_form" action="waiting" method="post">
+<input type="hidden" name="isHost" value="#isHost#">
+<table>
+	<tr>
+		<td>Name:</td>
+		<td><input id="name_input" type="text" name="name" maxlength="12" size="12"></td>
+	</tr>
+</table>
+<div style="display:#display#" class="name_taken">Error: Name already taken</div>
+</form>
+</div>
+</section>
+<footer>
+<input id="name_submit" type="submit" value="OK" form="name_form" disabled="true">
+</footer>
+</div>
+</body>
+</html>
